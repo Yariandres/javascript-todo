@@ -1,6 +1,7 @@
 # javascrpit-todo
 
-* [] Setup
+* [x] Setup
+* [] create a header / hero section with a title
 * [] Create New Todo Form
 * [] Call a function when the form is submitted
 * [] Create a string property to store the user input
