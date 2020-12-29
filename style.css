@@ -1,0 +1,5 @@
+.isCompleted {
+    text-decoration: line-through;
+    color: #eee;
+    transition: all 0.5s ease;
+}
