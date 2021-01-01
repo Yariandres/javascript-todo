@@ -14,6 +14,16 @@ let todos = [
 		name: 'Buy groceries',
 		completed: false,
 	},
+	{
+		id: Math.floor(Math.random() * Math.floor(10000)),
+		name: 'Clean the kitchen',
+		completed: false,
+	},
+	{
+		id: Math.floor(Math.random() * Math.floor(10000)),
+		name: 'Feed the cat',
+		completed: false,
+	},
 ];
 
 // selectors
@@ -42,8 +52,6 @@ function addTodo() {
 }
 
 function renderTodos() {
-	
-
 	todoElement.innerHTML = todos
 		.map(
 			todo => `            
@@ -72,6 +80,7 @@ function deletedTodo(e) {
 	}
 }
 
-function deleteAllTodos(e) {
+function deleteAllTodos() {
 	return todoElement.innerHTML = '';
 }
+

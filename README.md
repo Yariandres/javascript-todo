@@ -13,4 +13,5 @@
 * [x] Check done on a todo to mark it as done
 * [x] Show a line through the todo tet
 * [x] Add a button to delete a todo
-* [] Add a button to mark all todos as done
+* [x] Add a button to mark all todos as done
+* [ ] Add css to application
