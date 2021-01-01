@@ -31,11 +31,13 @@ const todoList = document.querySelector('.todoList');
 const todoItemName = document.querySelector('.todoList');
 const deleteAllbutton = document.querySelector('.deleteAllBtn');
 const todoElement = document.querySelector('.todoList');
+const filterOption = document.querySelector('.filterTodos');
 
 // Event listeners
 todoList.addEventListener('click', deletedTodo);
 todoItemName.addEventListener('click', markCompleted);
 deleteAllbutton.addEventListener('click', deleteAllTodos);
+filterOption.addEventListener('click', filterTodos);
 
 
 function addTodo() {
@@ -82,5 +84,10 @@ function deletedTodo(e) {
 
 function deleteAllTodos() {
 	return todoElement.innerHTML = '';
+}
+
+function filterTodos(e) {
+	const todos = todoList.childNodes;
+	console.log(todos)
 }
 

@@ -1,3 +1,7 @@
+body {
+    background-color: #eee;
+}
+
 .isCompleted {
     text-decoration: line-through;
     color: #eee;
@@ -10,10 +14,34 @@ select {
     appearance: none;
     outline: none;
     border: none;
+    text-align: right;
 }
 
-.filterTodos {
-    margin: 1rem;
+.select {
     position: relative;
     overflow: hidden;
+    width: 15%;
+}
+
+select {
+    color: rgb(31, 3, 3);
+    width: 100%;   
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.select::after {
+    content: "\25BC";
+    position: absolute;
+    background-color: rgba(165, 42, 42, 0.192);
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.select:hover::after {
+    background-color: rgb(150, 255, 220);
+    color:rgb(26, 4, 4)
 }
